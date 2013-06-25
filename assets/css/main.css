@@ -1,0 +1,8 @@
+.right-panel {
+	background: #333;
+	color: #eee;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
