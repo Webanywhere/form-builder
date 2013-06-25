@@ -1,3 +1,4 @@
+/* Right Panel */
 .right-panel {
 	background: #333;
 	color: #eee;
@@ -5,4 +6,73 @@
 	top: 0;
 	bottom: 0;
 	right: 0;
+	padding-top: 14px;
+	padding-bottom: 14px;
 }
+
+/* Guides */
+form.show-guides .row {
+	outline: 1px dotted orange;
+}
+
+form.show-guides .col {
+	border: 1px dotted orange;
+}
+
+/* controls */
+.control-container {
+	padding-right: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #666;
+}
+
+.control {
+	width: 48px;
+	height: 48px;
+	background-color: #ccc;
+	background-position: 8px 8px;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	margin-top: 10px;
+	display: inline-block;
+	overflow: hidden;
+	color: #eee;
+	box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, .6);
+}
+
+.control-input { background-image: url("../img/controls/Form Input (Text)_32x32.png"); }
+.control-textarea { background-image: url("../img/controls/Form Input (Textarea)_32x32.png"); }
+.control-select { background-image: url("../img/controls/Form Input (Select Single)_32x32.png"); }
+.control-selectmultiple { background-image: url("../img/controls/Form Input (Select Multiple)_32x32.png"); }
+.control-checklist { background-image: url("../img/controls/Form Input (Checkbox)_32x32.png"); }
+.control-radiolist { background-image: url("../img/controls/Form Input (Radio)_32x32.png"); }
+
+/* Misc */
+.main-panel {
+	min-height: 100%;
+}
+
+.main-panel form, 
+.main-panel .row 
+{
+	min-height: 50px;
+}
+
+.main-panel form .row .placeholder {
+	background: red;
+	width: 8.333333333333332%;
+	height: 48px;
+	float: left;
+}
+
+.row,
+.col {
+	position: relative;
+}
+
+/* Selections */
+form .row.selected,
+form .row .col.selected {
+	outline:1px solid red;
+}
+

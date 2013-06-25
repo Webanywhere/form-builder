@@ -1,16 +1,53 @@
 <html>
 <head>
 	<title>Bootstrap 3 Form Builder</title>
+	<meta charset='utf-8'> 
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/redmond/jquery-ui-1.10.3.custom.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="col-9">Main</div>
-		<div class="col-3 right-panel">Right Panel</div>
+		<div class="col-9 main-panel">
+			<h1>Form Builder</h1>
+
+			<form class="show-guides"></form>
+
+		</div>
+		<div class="col-3 right-panel">
+			<div class="row">
+				<div class="col-12">
+					<h4>Palette</h4>
+					<div class="control-container">
+						<div class="control control-input" data-control="input" title="Text Input"></div>
+						<div class="control control-textarea" data-control="textarea" title="Text Area"></div>
+						<div class="control control-select" data-control="select" title="Dropdown"></div>
+						<div class="control control-selectmultiple" data-control="selectmultiple" title="Select List"></div>
+						<div class="control control-checklist" data-control="checklist" title="Checkbox List"></div>
+						<div class="control control-radiolist" data-control="radiolist" title="Radio List"></div>
+					</div>
+
+					<h5>Default Width</h5>
+					<div id="default-width"></div>
+
+					<h4>Actions</h4>
+					<button class="btn btn-primary add-row">Add row</button>
+					<button class="btn btn-danger delete-item" disabled>Delete item</button>
+
+					<h4>Options</h4>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" class="guides" checked> Guides
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
