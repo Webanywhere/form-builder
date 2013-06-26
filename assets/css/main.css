@@ -1,3 +1,7 @@
+html, body, .container-fluid {
+	height: 100%;
+}
+
 /* Right Panel */
 .right-panel {
 	background: #333;
@@ -50,6 +54,7 @@ form.show-guides .col {
 /* Misc */
 .main-panel {
 	min-height: 100%;
+	padding-bottom: 30px;
 }
 
 .main-panel form, 
