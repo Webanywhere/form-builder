@@ -81,3 +81,10 @@ form .row .col.selected {
 	outline:1px solid red;
 }
 
+/* Properties */
+.properties,
+.properties-title
+{
+	display: none;
+}
+
