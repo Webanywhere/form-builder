@@ -29,3 +29,10 @@ test( "toggle guides", function() {
 	$guideschk.trigger( "click" );
 	ok( $( '.main-panel form').hasClass('show-guides'), "Clicking the guides checkbox a second time toggles off the guides class");
 });
+
+// test that we can get a default width
+test( 'default width', function() {
+	equal(main.getDefaultWidth(), 12, "Default to 12");
+	$('#default-width').slider('value', 4)
+	equal(main.getDefaultWidth(), 4, "Change to 4");
+});
