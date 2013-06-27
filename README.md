@@ -1,6 +1,8 @@
 form-builder
 ============
 
+[![Build Status](https://travis-ci.org/Webanywhere/form-builder.png?branch=master)](https://travis-ci.org/Webanywhere/form-builder)
+
 ## Introduction
 
 A form builder for Bootstrap 3.0. The purpose of this software is to generate view code for underscore or php. This project is in early development.
