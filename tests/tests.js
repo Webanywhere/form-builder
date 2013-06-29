@@ -73,3 +73,7 @@ test( 'item properties', function() {
 	$('#properties-width').trigger('input');
 	ok($('.col').hasClass('col-4'), 'can change item width');
 });
+
+test( 'form html', function() {
+	equal(formhtml(), '<form class="show-guides"></form>', 'we can get the html that the form generates');
+});

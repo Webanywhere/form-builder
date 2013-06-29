@@ -215,3 +215,7 @@ var main = function($) {
 	}
 
 }(window.jQuery);
+
+function formhtml() {
+	return($('#form').html());
+};
