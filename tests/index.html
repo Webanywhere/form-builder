@@ -6,21 +6,53 @@
 	<link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.12.0.css">
 </head>
 <body>
-	<div class="main-panel" hidden="true">
-		<form>
-			<input type="checkbox" class="guides" checked>
-			<div id="default-width"></div>
-		</form>
-		<div class="control"></div>
-	</div>
-  		<h4>Actions</h4>
+		<div class="col-9 main-panel" hidden="true">
+			<h1>Form Builder</h1>
+
+			<form class="show-guides"></form>
+
+		</div>
+<div class="col-3 right-panel clearfix" hidden="true">
+			<div class="row clearfix">
+				<div class="col-12">
+					<h4>Palette</h4>
+					<div class="control-container">
+						<div class="control control-input" data-control="input" title="Text Input"></div>
+						<div class="control control-textarea" data-control="textarea" title="Text Area"></div>
+						<div class="control control-select" data-control="select" title="Dropdown"></div>
+						<div class="control control-selectmultiple" data-control="selectmultiple" title="Select List"></div>
+						<div class="control control-checklist" data-control="checklist" title="Checkbox List"></div>
+						<div class="control control-radiolist" data-control="radiolist" title="Radio List"></div>
+					</div>
+
+					<h5>Default Width</h5>
+					<div id="default-width"></div>				
+
+					<h4>Actions</h4>
 					<button class="btn btn-primary add-row">Add row</button>
 					<button class="btn btn-danger delete-item" disabled>Delete item</button>
-  
+
+					<h4>Options</h4>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" class="guides" checked> Guides
+						</label>
+					</div>
+
+					<h4 class="properties-title">Properties</h4>
+					<div class="properties">
+						[Properties]
+					</div>
+				</div>
+			</div>
+		</div>
+
+					
 	<div id="qunit"></div>
 	<div id="qunit-fixture"></div>
 	<script src="../assets/js/jquery.js"></script>  
   	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  	<script src="jquery.simulate.js"></script>
 
 	<script src="../assets/js/main.js"></script>
 	<script src="http://code.jquery.com/qunit/qunit-1.12.0.js"></script>
