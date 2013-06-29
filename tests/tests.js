@@ -40,9 +40,3 @@ test( 'default width', function() {
 	$('#default-width').slider('value', 4)
 	equal(main.getDefaultWidth(), 4, "Change to 4");
 });
-
-// test that we can drag and drop items and then remove them
-test( 'drag and drop', function() {
-	//pending
-	expect(0);
-});
