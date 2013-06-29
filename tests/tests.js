@@ -66,7 +66,7 @@ test( 'item properties', function() {
 	addnewrow();
 
 	// mock the addition of a new input because simulating drag/drop is too hard
-	newItem = '<div class="col col-1">';
+	var newItem = '<div class="col col-1">';
 	newItem += '<label for="control_1">Label 1</label>';
 	newItem += '<input type="text" id="control_1" placeholder="" name="control_1">';
 	newItem += '</div>';
