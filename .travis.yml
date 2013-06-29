@@ -1,4 +1,7 @@
 language: node_js
 node_js:
  - "0.10"
+before-script:
+ - node server.js
+ - sleep 3
 script: phantomjs tests/run-qunit.js file://`pwd`/tests/index.html
